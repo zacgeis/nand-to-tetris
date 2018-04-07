@@ -8,3 +8,4 @@
 binary code for the actual hardware.
 - The assembler also translates variables and labels to their respective
 locations in memory.
+- See assembler/src/assembler.c
