@@ -1,0 +1,17 @@
+builddir = build
+clags = -Wall
+
+rule compile
+  deps = gcc
+  depfile = $out.d
+  command = gcc -MMD -MF $out.d $cflags -c $in -o $out
+
+rule link
+  command = gcc $in -o $out
+
+build $builddir/assembler.o: compile src/assembler.c
+
+build $builddir/assembler: link $builddir/assembler.o
+
+default $builddir/assembler
+
