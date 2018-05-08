@@ -341,6 +341,9 @@ void preprocess(char *buffer) {
     if (buffer[i] == ' ') {
       continue;
     }
+    if (buffer[i] == '\r') {
+      continue;
+    }
     if (buffer[i] == '\n') {
       continue;
     }
