@@ -1,3 +1,2 @@
 // This is a comment
-PUSH 1
-POP 1
+push local 1

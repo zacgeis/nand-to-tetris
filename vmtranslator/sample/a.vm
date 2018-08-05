@@ -1,0 +1,4 @@
+// test
+push     local   2  //  test
+push constant 3
+pop constant 3
